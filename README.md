@@ -1,4 +1,4 @@
-# E-Commerce Application
+# Employee Reimbursement System
 ## Description
 This application "Employee Reimbursement system will help Employees to make requests to the manager for reimbursement and get the services.
 ## Technologies used
