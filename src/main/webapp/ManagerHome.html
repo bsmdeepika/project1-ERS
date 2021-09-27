@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>FinanceManagerHome</title>
+ <style>
+body {
+  background-color: teal;
+}
+ 
+  </style>
+</head>
+<body>
+
+<form action="http://localhost:8080/ERS/DisplayEmployees"  method="get">
+
+<input type="submit" value="Display all Employees">
+
+</form>
+<br>
+<form action="http://localhost:8080/ERS/DisplayAllReimbursement" method="get">
+<input type="submit" value="view all employee Reimbursement Requests">
+</form>
+<br>
+<form action="http://localhost:8080/ERS/AllReimStatus" method="get">
+<input type="submit" value="View all reimbursement request with their status">
+</form>
+<form action="http://localhost:8080/ERS/ViewAccepted" method="get">
+<input type="submit" value="view only accepted reimbursement requests">
+</form>
+<br>
+<form action="http://localhost:8080/ERS/ViewRejected" method="get">
+<input type="submit" value="view only rejected reimbursement requests">
+</form>
+<form action="http://localhost:8080/ERS/DispurEmptoManager" method="get">
+Enter id:<input type="text" name="id">
+<input type="submit" value="view all reimbursement requests ">
+</form>
+<p>Accept/Deny employee Reimbursement request by submitting the below form</p>
+<form action="http://localhost:8080/ERS/ManagerApproval " method="get">
+<center>
+<table>
+<tr><td>Enter employeeId:</td><td><input type="text" name="id"></td></tr>
+<tr><td>Employee Name:</td><td><input type="text" name="name"></td></tr>
+<tr><td>Email:</td><td><input type="email" name="email"></td></tr>
+<tr><td>Reimbursement type:</td><td>Business and Expense<input type="radio" name="type" value="Business and Expense">
+										Health care<input type="radio" name="type" value="Health care">
+										Travel and Milage<input type="radio" name="type" value="Travel and Milage"></td></tr>
+							
+<tr><td>Amount:</td><td><input type="text" name="amount"></td></tr><br>
+<tr><td>BillNumber:</td><td><input type="text" name="billNumber"></td></tr><br>									
+<tr><td>Reimbursement Status:</td><td>Accepted<input type="radio" name="status" value="accepted">
+									Rejected<input type="radio" name="status" value="rejected"></td></tr>
+									<tr><td><input type="reset" value="cancel"></td>
+									<td><input type="submit" value="submit"></td></tr>
+									</table>
+</center>
+</form>
+<br>
+
+<a href="index.jsp">Logout</a>
+</body>
+</html>

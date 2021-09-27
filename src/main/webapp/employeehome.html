@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <style>
+  
+body {
+  background-color: teal;
+}
+ 
+  </style>
+</head>
+<body>
+<h2>Welcome to reimbursement page....You can request for Reimbursement by submitting the below form.</h2>
+<form action="http://localhost:8080/ERS/ReimbursementDetails" method="get">
+<table align="center">
+<tr>
+        <td>Select Reimbursement Type</td>
+        <td>Travel and Milage<input  type="radio" name="type" value="Travel and Milage" ></td>
+        <td>Business and Expense<input  type="radio" name="type" value="Business and Expense" ></td>
+      <td>Health care<input  type="radio" name="type" value="Health care" ></td>
+      </tr>
+<tr>
+<td>Employee id:</td>
+<td><input type="text" name="id" required></td>
+</tr>
+<tr>
+<td>Employee Name:</td>
+<td><input type="text" name="name" required></td>
+</tr>
+<tr>
+<td>Bill Number</td>
+<td><input type="text" name="billNumber" required>
+</td></tr>
+<tr><td>Amount</td>
+<td><input type="text" name="amount" required></td></tr>
+  <tr>
+      <button type="submit" class="btn btn-success" >Submit</button>
+     
+        <td><input type="reset" value="Cancel"></td>
+      
+      </tr>
+</table></form>
+<br>
+
+
+<p>Enter your id to get all the details of your reimbursement</p>
+<form action="http://localhost:8080/ERS/DispurEmptoManager" method="get">
+Enter id:<input type="text" name="id">
+<input type="submit" value="view all my reimbursement requests ">
+</form>
+
+
+<br>
+<center><a href="viewand updateemp.html">Click here to view and update your details</a></center>
+<br>
+<a href="index.jsp">Logout</a>
+
+
+</body>
+</html>

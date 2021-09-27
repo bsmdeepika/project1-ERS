@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example for ERS application xxxxx</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script >
+     function validate() {
+    	 alert("submit is selected...")
+    	 
+    	
+     }
+  
+  </script>
+   <style>
+  
+body {
+  background-color: teal;
+}
+ 
+  </style>
+</head>
+<body>
+    
+<div class="container">
+  <h2> Manager login form of ERS  </h2>
+  
+ 
+ 
+ <h1 id="abc">   </h1>
+      <form action="http://localhost:8080/ERS/ManagerLoginServlet" method="get">  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td><Input id="a1" type="text" name="id"></td>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Password</td>
+        <td><input id="a2" type="password" name="password"></td>
+      
+      </tr>
+     
+     <tr>
+        <td>Type</td>
+        <td>Manager<input  type="radio" name="type" value="manager" ></td>
+      
+      </tr>
+      <tr>
+      <button type="submit" class="btn btn-success" >Submit</button>
+     
+        <td><input type="reset" value="Cancel"></td>
+        <td><a href="forgotpassword.html">ForgotPassword</a>
+      
+      </tr>
+    </tbody>
+  </table>
+  </form>
+</div>
+
+</body>
+</html>
